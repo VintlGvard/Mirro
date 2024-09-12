@@ -1,0 +1,170 @@
+$base_color: #3A5F56;
+$second_color: #292c32;
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Robota;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+
+.btn{
+    color: #FFF;
+    background-color: $base_color;
+    border-radius: 6px;
+    padding: 10px 18px;
+
+}
+
+
+.header{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 120px;
+    }
+
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+    &__menu{
+        display: flex;
+
+    }
+    &__link{
+        color: $base_color;
+        font-size: 16px;
+        &:hover{
+            color: red;
+        }
+    }
+    &__item{
+        margin-right: 30px;
+
+    }
+    &__cart{
+        display: flex;
+        gap: 8px;
+        &::before{
+            content: '';
+            background: url(../img/telejka.svg);
+            display: block;
+            width: 17px;
+            height: 17px;
+        }
+        &::after{
+            content: '0';
+            color: $base_color;
+            background-color: #fff;
+            padding:  0 6px;
+            border-radius: 50%;
+
+
+
+        }
+    }
+}
+
+.main{
+    background: url(../img/back.png) no-repeat center center / cover;
+    padding: 100px 0;
+    &__wrap{
+        display: flex;
+        gap: 64px;
+        align-items: center;
+    }
+    &__title{
+        color: $base_color;
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    &__text{
+        color: $base_color;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+.services{
+    padding: 100px 0;
+    &__title{
+        color: $base_color;
+        font-size: 32px;
+        margin-bottom: 11px;
+        text-align: center;
+    }
+    &__text{
+        color:$second_color;
+        font-size: 16px;
+        max-width: 590px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+        &_center{
+            text-align: center;
+        }
+    }
+    &__row{
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    &__card{
+        max-width: 378px;
+        border-radius: 16px;
+        background-color: #f4f3f0;
+        padding: 30px;
+    }
+
+
+    &__icon{
+        width: 48px;
+        height: 48px;
+        margin-bottom: 9px;
+
+    }
+
+    &__subtitle{
+        color: $base_color;
+        font-size: 24px;
+        margin-bottom: 6px;
+    }
+
+    
+    &__read{
+        
+        display: flex;
+        align-items: center;
+        color: $base_color;
+        font-size: 17px;
+        gap: 5px;
+        &::after{
+            content: '';
+            background: url(../img/arrow.svg) no-repeat center center / cover;
+            display: block;
+            width: 20px;
+            height: 10px;
+            
+        }
+    }
+}
+
